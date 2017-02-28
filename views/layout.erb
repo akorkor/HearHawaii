@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <!-- ======= ======= ======= head ======= ======= ======= -->
+	<head>
+	    <meta charset="utf-8">
+	    <title >HearHawii</title>
+      <!-- == styles == -->
+	    <link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+  <!-- ======= ======= ======= body ======= ======= ======= -->
+	<body>
+	    <!-- ======= header ======= -->
+	    <div id="header">
+	        <p id="headerText">HearHawii</p>
+	    </div>
+
+			<!-- ======= menu ======= -->
+			<div id="menuBx">
+				<%= erb :menu %>
+			</div>
+
+	    <!-- ======= content ======= -->
+			<div id="topic">
+
+					<%= yield %>
+
+	    </div>
+	    <!-- ======= footer ======= -->
+<!-- 	    <div id="footer" class="section">
+    <p>footer</p>
+</div>
+ -->	    <!-- ======= scripts ======= -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

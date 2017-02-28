@@ -1,0 +1,6 @@
+<% menu_items = ["home", "about", "imageGallery", "contact"] %>
+<% puts menu_items %>
+
+<% menu_items.each do |name|%>
+  <div class="menu-item"> <a href="<%= name %>"><%= name %></a> </div>
+<% end %>
